@@ -1,16 +1,20 @@
 *** Settings ***
 Library  Selenium2Library
 
+*** Variables ***
+${search_field} =  id=twotabsearchtextbox
+${search_button} =  xpath=//*[@id="nav-search"]/form/div[2]/div/input
+
 *** Keywords ***
 Search for Products
     Enter Search Term
     Submit Search
 
 Enter Search Term
-    Input Text  id=twotabsearchtextbox  Ferrari 458
+    Input Text  ${search_field}  Ferrari 458
 
 Submit Search
-    Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input
+    Click Button  ${search_button}
 
 # method for passing arguments
 Search for Variable Products
@@ -23,4 +27,4 @@ Search for Variable Products
 Enter Variable Search Term
     [Arguments]  ${search_term}
 
-    Input Text  id=twotabsearchtextbox  ${search_term}
+    Input Text  ${search_field}  ${search_term}

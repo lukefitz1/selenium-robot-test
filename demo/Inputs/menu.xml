@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<breakfast_menu>
+    <food>
+        <name>Belgian Waffles</name>
+        <price>5.95</price>
+        <description>Two waffles</description>
+        <calories>650</calories>
+    </food>
+    <food>
+        <name>Strawberry Waffles</name>
+        <price>7.00</price>
+        <description>Strwawberry waffles</description>
+        <calories>700</calories>
+    </food>
+    <food>
+        <name>Berry Waffles</name>
+        <price>7.50</price>
+        <description>Some berry waffles</description>
+        <calories>8.00</calories>
+    </food>
+    <food>
+        <name>French Toast</name>
+        <price>6.50</price>
+        <description>What the French Toast</description>
+        <calories>750</calories>
+    </food>
+    <food>
+        <name>Homestyle Breakfast</name>
+        <price>6.95</price>
+        <description>Two eggs and bacon</description>
+        <calories>700</calories>
+    </food>
+</breakfast_menu>

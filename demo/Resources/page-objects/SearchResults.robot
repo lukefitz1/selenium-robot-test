@@ -1,6 +1,9 @@
 *** Settings ***
 Library  Selenium2Library
 
+*** Variables ***
+${product_link} =  css=#result_3 > div > div:nth-child(3) > div > a
+
 *** Keywords ***
 Verify Search Results
     [Arguments]  ${search_term}
@@ -8,4 +11,4 @@ Verify Search Results
     Wait Until Page Contains  ${search_term}
 
 Click Product Link
-    Click Link  css=#result_3 > div > div:nth-child(3) > div > a
+    Click Link  ${product_link}

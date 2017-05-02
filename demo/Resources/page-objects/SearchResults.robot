@@ -12,3 +12,9 @@ Verify Search Results
 
 Click Product Link
     Click Link  ${product_link}
+
+Return Verify Search Results
+    [Arguments]  ${search_term}
+
+    Wait Until Page Contains  ${search_term}
+    [Return]  Found it!
